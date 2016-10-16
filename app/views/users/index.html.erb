@@ -1,8 +1,10 @@
-<h1>show all users</h1>
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
 
-<% @users.each do |user| %>
-	ID: <%= user.id %>
-	Name: <%= user.name %>
-	Email: <%= user.email %>
-	<%= link_to "Edit", edit_user_path(user) %><br>
-<% end %>
+<%= will_paginate %>
+
+<ul class="users">
+	<%= render @users %>
+</ul>
+
+<%= will_paginate %>
