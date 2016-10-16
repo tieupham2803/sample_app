@@ -1,0 +1,8 @@
+<h1>Edit user</h1>
+<%= form_for @user do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name, class: "form-control" %>
+	<%= f.label :email %>
+	<%= f.text_field :email, class: "form-control" %>
+	<%= f.submit "Update", class: "btn btn-primary" %>
+<% end %> 

@@ -1,0 +1,8 @@
+<h1>show all users</h1>
+
+<% @users.each do |user| %>
+	ID: <%= user.id %>
+	Name: <%= user.name %>
+	Email: <%= user.email %>
+	<%= link_to "Edit", edit_user_path(user) %><br>
+<% end %>

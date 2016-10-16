@@ -1,0 +1,16 @@
+<h1>Show Job</h1>
+<% provide(:title, @job.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+				ID: <%= @job.id %><br>
+				Name: <%= @job.name %><br>
+				Description: <%= @job.description %><br>
+				User Number: <%= @job.user_number %><br><br>
+
+				<%= link_to "Exit", jobs_path %><br>
+      </h1>
+    </section>
+  </aside>
+</div>

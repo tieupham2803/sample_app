@@ -3,8 +3,9 @@
 		<%= link_to "sample app", '#', id: "logo" %>
 		<nav>
 			<ul class="nav navbar-nav pull-right">
-				<li><%= link_to "Home", '/home' %></li>
-				<li><%= link_to "Help", '/help' %></li>
+				<li><%= link_to "Home", home_path %></li>
+				<li><%= link_to "Help", help_path %></li>
+        <li><%= link_to "Job", jobs_path %></li>
         <% if logged_in? %>
           <li><%= link_to "Users", '#' %></li>
           <li class="dropdown">
