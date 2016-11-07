@@ -3,7 +3,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc2', '< 5.1'
-gem 'bcrypt', '3.1.7'
+gem 'bcrypt',                  '3.1.11'
+gem 'faker',                   '1.6.6'
+gem 'carrierwave',             '0.11.2'
+gem 'mini_magick',             '4.5.1'
+gem 'fog',                     '1.38.0'
+gem 'will_paginate',           '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
